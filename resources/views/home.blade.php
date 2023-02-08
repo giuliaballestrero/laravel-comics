@@ -1,10 +1,17 @@
 @extends('layouts.app')
 
+@section('jumbo')
+<section class="jumbo">
+    <!--inserisco sfondo in app.scss-->
+</section>
+@endsection
+
 @section('main-content')
-    <div class="container-fluid bg-dark">
+<section class="bg-dark pt-5">
+    <div class="container">
         <div class="row">
             @foreach ($comics as $comic)
-            <div class="col-2 py-3">
+            <div class="col-2 pb-4">
                 <div class="card">
                 <img src="{{ $comic['thumb']}}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -18,4 +25,5 @@
             @endforeach
         </div>
     </div>
+</section>
 @endsection
