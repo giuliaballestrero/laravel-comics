@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Dc Comics | Homepage')
+
 @section('jumbo')
 <section class="jumbo">
     <!--inserisco sfondo in app.scss-->
